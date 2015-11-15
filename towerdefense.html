@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/united.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="images/MadDevsicon.png">
+    <script src="js/gamejs.js"></script>
+    <script>
+    require.setModuleRoot('./js/');
+    require.run('main')
+    </script>
+    <title>Mad Devs</title>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img width="50" alt="Brand" src="images/MadDevsicon.png">
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="./index.html"><b>Mad Devs</b></a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-center">
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a>Powered by</a></li>
+                    <li ><a href="http://gamejs.org">GameJs</a></li>
+                    <li><a href="https://github.com/MadDevs">Github</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br><br>
+    <div>
+        <div id="gjs-loader">
+           <progress max=1 min=0 steps=0.1></progress>
+           <br/>Loading...
+       </div>
+       <canvas id="gjs-canvas"></canvas>
+   </div>
+</body>
+</html>
